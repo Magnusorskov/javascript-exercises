@@ -19,8 +19,7 @@ function filterRangeInPlace(arr, a, b) {
   for (let i = arr.length - 1; i >= 0; i--) {
     let int = arr[i];
     if (!(a <= int && int <= b)) {
-      arr.splice(i, 1);
+      arr.splice(i, 1); //splice removes 1 element from i index
     }
   }
 }
-.
