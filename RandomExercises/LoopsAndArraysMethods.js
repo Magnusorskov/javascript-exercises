@@ -23,3 +23,7 @@ function filterRangeInPlace(arr, a, b) {
     }
   }
 }
+
+function sortInDecreasingOrder(arr) {
+  arr.sort((a, b) => b - a); //sort without parameters sorts based on Unicode so it will sort with strings. here we apply a compare function.
+}
