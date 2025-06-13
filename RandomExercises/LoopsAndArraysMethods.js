@@ -42,7 +42,26 @@ function shuffleArray(arr) {
     randomIndex = Math.floor(Math.random() * currentIndex); // gets a random value BETWEEN 0 and currentIndex. Current index is always one higher than the last actual index of unsorted numbers.
     currentIndex--; // Moves the current index to the last actual index of unsorted numbers
 
-    [shuffled[currentIndex],shuffled[randomIndex]] = [shuffled[randomIndex],shuffled[currentIndex]]; //switches the last unsorted number with a random number(can be itself)
+    [shuffled[currentIndex], shuffled[randomIndex]] = [
+      shuffled[randomIndex],
+      shuffled[currentIndex],
+    ]; //switches the last unsorted number with a random number(can be itself)
   }
   return shuffled;
-} 
+}
+
+function filterUniqueArrayMembers(arr) {
+  let arrayMembersSet = new set(); //create an empty set
+  for (let str of arr) { //for each function
+    arrayMembersSet.add(str); //adds to set, only unique items can be in a set
+  }
+  return [...arrayMembersSet]; //copies the content of the set to an array and returns it
+}
+
+// this is a shortened version:
+
+/*function filterUniqueArrayMembers(arr) {
+  return [...new Set(arr)]; 
+}*/
+
+
