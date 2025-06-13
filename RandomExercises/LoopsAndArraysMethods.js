@@ -27,3 +27,7 @@ function filterRangeInPlace(arr, a, b) {
 function sortInDecreasingOrder(arr) {
   arr.sort((a, b) => b - a); //sort without parameters sorts based on Unicode so it will sort with strings. here we apply a compare function.
 }
+
+function copyAndSortArray(stringArr) {
+  return stringArr.slice().sort(); //slice() with no parameters copies the whole array and since i know it's filled with strings, i can use .sort().
+}
