@@ -29,5 +29,6 @@ function sortInDecreasingOrder(arr) {
 }
 
 function copyAndSortArray(stringArr) {
-  return stringArr.slice().sort(); //slice() with no parameters copies the whole array and since i know it's filled with strings, i can use .sort().
+  return stringArr.slice().sort(); //slice() with no parameters copies the whole array and since i know it's filled with strings, i can use.
 }
+//TEST test
